@@ -71,27 +71,24 @@ class _TestPageState extends State<TestPage>
             BottomNavigationBarItem(
                 icon: Icon(Icons.home,
                     color: tabIndex == 0 ? Colors.blue : Colors.grey),
-                title: Text('Example1',
-                    style: TextStyle(
-                        color: tabIndex == 0 ? Colors.blue : Colors.grey))),
+                label: 'Example1',
+                    backgroundColor:  tabIndex == 0 ? Colors.blue : Colors.grey),
             BottomNavigationBarItem(
                 icon: Icon(Icons.cloud,
                     color: tabIndex == 1 ? Colors.blue : Colors.grey),
-                title: Text('Example2',
-                    style: TextStyle(
-                        color: tabIndex == 1 ? Colors.blue : Colors.grey))),
+                label:'Example2',
+                        backgroundColor: tabIndex == 1 ? Colors.blue : Colors.grey),
             BottomNavigationBarItem(
                 icon: Icon(Icons.call,
                     color: tabIndex == 2 ? Colors.blue : Colors.grey),
-                title: Text('Example3',
-                    style: TextStyle(
-                        color: tabIndex == 2 ? Colors.blue : Colors.grey))),
+                label: 'Example3',
+                    backgroundColor: tabIndex == 2 ? Colors.blue : Colors.grey),
             BottomNavigationBarItem(
                 icon: Icon(Icons.transform,
                     color: tabIndex == 3 ? Colors.blue : Colors.grey),
-                title: Text('Example4',
-                    style: TextStyle(
-                        color: tabIndex == 3 ? Colors.blue : Colors.grey))),
+                label: 'Example4',
+                    backgroundColor: 
+                         tabIndex == 3 ? Colors.blue : Colors.grey),
           ],
           onTap: (index) {
             _pageController.jumpToPage(index);
